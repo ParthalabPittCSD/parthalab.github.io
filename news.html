@@ -1,0 +1,597 @@
+<!doctype html>
+<!--
+  NEWS PAGE
+  Each section has a COPY THIS BLOCK template. To add something: copy the block, paste it where the
+  comment says, then change the text. Everything you need to change is marked  REPLACE:
+  Save as news.html in the repo's top folder.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>News | Parthasarathy Lab</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <link rel="icon" type="image/x-icon" href="static/images/favicons/favicon.ico">
+
+    <style>
+
+      /* Clickable headlines */
+      .entry-link { color: #000; text-decoration: none; }
+      .entry-link:hover { text-decoration: underline; }
+      .read-more { font-weight: 600; color: #000; }
+
+      /* Lab News: picture on the left, text on the right */
+      .news-entry { border-top: 2px solid #000; padding: 1.4rem 0; }
+      .news-entry h3 { font-size: 1.3rem; font-weight: 700; margin: 0 0 .6rem; }
+      .news-entry p { margin-bottom: .9rem; }
+      .news-entry img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; transition: opacity .2s; }
+      .news-entry a:hover img { opacity: .85; }
+      .news-pill { display: inline-block; background: #eee; color: #000; border-radius: 999px; padding: .25rem .8rem; font-size: .8rem; font-weight: 600; }
+
+      /* In the media */
+      .media-row { display: flex; gap: 1rem; padding: .8rem 0; border-top: 1px solid #ccc; }
+      .media-outlet { flex: 0 0 11rem; font-weight: 600; }
+      .media-title  { flex: 1 1 auto; }
+      .media-year   { flex: 0 0 3.5rem; text-align: right; color: #555; }
+      @media (max-width: 575.98px) {
+        .media-row { flex-wrap: wrap; gap: .1rem 1rem; }
+        .media-outlet { flex-basis: 100%; }
+        .media-title { flex-basis: 100%; }
+        .media-year { text-align: left; }
+      }
+
+      /* Awards */
+      .award-card { border: 2px solid #000; padding: 1.25rem; height: 100%; background: #fff; }
+      .award-card .award-icon { font-size: 1.6rem; margin-bottom: .5rem; }
+      .award-card .award-year { font-size: .85rem; color: #555; }
+      .award-card h3 { font-size: 1.1rem; margin: .25rem 0 .4rem; }
+      .award-card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; margin-bottom: .75rem; transition: opacity .2s; }
+      .award-card a:hover img { opacity: .85; }
+
+      /* Gallery */
+      .gallery-item { display: block; position: relative; overflow: hidden; background: #000; }
+      .gallery-item img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; transition: transform .3s, opacity .3s; }
+      .gallery-item:hover img, .gallery-item:focus img { transform: scale(1.05); opacity: .85; }
+      #galleryModal .modal-content { background: #000; color: #fff; border: 0; border-radius: 0; }
+      #galleryModal img { max-height: 75vh; width: auto; max-width: 100%; margin: 0 auto; display: block; }
+      #galleryModal .gallery-nav { position: absolute; top: 40%; z-index: 2; background: rgba(0,0,0,.5); color: #fff; border: 0; font-size: 1.6rem; padding: .5rem .9rem; }
+      #galleryModal .gallery-prev { left: .5rem; }
+      #galleryModal .gallery-next { right: .5rem; }
+    </style>
+  </head>
+
+  <body>
+
+  <!-- ============ NAVBAR (same on every page; only the "active" link changes) ============ -->
+  <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+    <div class="container">
+      <a class="navbar-brand custom-navbar-brand" href="https://www.pitt.edu/">
+        <img src="static/images/pittsecondaryreverse.png" width="135" alt="Pitt">
+      </a>
+      <span class="border-start">
+        <h3 class="custom-navbar-text ms-4 mt-2">Parthasarathy Lab</h3>
+      </span>
+      <button class="navbar-toggler custom-navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="menu-label">Menu</span>
+        <span class="toggle-arrow" aria-hidden="true"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item custom-nav-item"><a class="nav-link custom-nav-link" href="index.html">Home</a></li>
+          <li class="nav-item custom-nav-item"><a class="nav-link custom-nav-link" href="research.html">Research</a></li>
+          <li class="nav-item custom-nav-item"><a class="nav-link custom-nav-link" href="people.html">Members</a></li>
+          <li class="nav-item custom-nav-item"><a class="nav-link custom-nav-link" href="publications.html">Publications</a></li>
+          <li class="nav-item custom-nav-item"><a class="nav-link custom-nav-link active" href="news.html">News</a></li>
+          <li class="nav-item custom-nav-item"><a class="nav-link custom-nav-link" href="positions.html">Positions</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main role="main">
+    <!-- ==========================================================================
+         0. HERO (photo with left-aligned, three-level text)
+         ========================================================================== --><!-- ============ HERO (photo with left-aligned, three-level text) ============ -->
+<header class="hero hero-page" style="height: clamp(280px, 26vw, 460px);">
+      <div class="hero-slide" style="background-image:url('static/images/news/hero.png');" role="img" aria-label="Describe the hero photo"></div>
+
+      <div class="hero-content">
+        <div class="container">
+          <p>Newsroom</p>
+          <h1>Latest News</h1>
+        </div>
+      </div>
+    </header>
+    <!-- ==========================================================================
+         1. LAB NEWS
+         ========================================================================== -->
+    <section id="lab-news" class="band news-section">
+      <div class="container">
+        <h2 class="mb-4">Lab News</h2>
+
+        <!-- ------------------------------------------------------------------
+             COPY THIS BLOCK TO ADD A NEWS ITEM.
+             Paste it directly BELOW this comment so the newest item stays on top.
+             The picture (on the left) and the headline both open the item's own page. To make that page,
+             copy an existing page in the news folder (for example news/podcast.html), rename it
+             (for example news/summer-party-2025.html), and use that same path in the three href="..." spots below.
+             No picture? Delete the <div class="col-md-3"> ... </div> block (the picture column)
+             and change  col-md-9  to  col-md-12.
+
+        <div class="news-entry">
+          <div class="row g-4 align-items-start">
+            <div class="col-md-3">
+              <a href="news/page-name.html">
+                <img src="static/images/news/photo-name.jpg" alt="Describe the picture">
+              </a>
+            </div>
+            <div class="col-md-9">
+              <h3><a href="news/page-name.html" class="entry-link">Headline goes here</a></h3>
+              <p>One or two sentences about what happened.</p>
+              <span class="news-pill">Month DD, YYYY</span>
+              <a href="news/page-name.html" class="read-more ms-3">Read more &rarr;</a>
+            </div>
+          </div>
+        </div>
+             ------------------------------------------------------------------ -->
+
+        <!-- PASTE NEW NEWS ITEMS HERE (newest first) -->
+
+        <div class="news-entry">
+          <div class="row g-4 align-items-start">
+            <div class="col-md-3">
+              <a href="news/news-end-of-semester.html">
+                <img src="static/images/news/labnews/Spring2025_lab.jpg" alt="Describe the picture">
+              </a>
+            </div>
+            <div class="col-md-9">
+              <h3><a href="news/news-end-of-semester.html" class="entry-link">End of semester and farewells</a></h3>
+              <p>The lab along with the lab of Dr. Hari Bharadwaj at CSD, got together to celebrate the end of Spring semester and bid farewell and good luck.</p>
+              <span class="news-pill">May 15, 2025</span>
+              <a href="news/news-end-of-semester.html" class="read-more ms-3">Read more &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-entry">
+          <div class="row g-4 align-items-start">
+            <div class="col-md-12">
+              <h3><a href="news/newpreprints.html" class="entry-link">New Preprints alert!</a></h3>
+              <p>Some of the latest works from the lab are now under review and available as preprints.</p>
+              <span class="news-pill">Sep 26, 2024</span>
+              <a href="news/newpreprints.html" class="read-more ms-3">Read more &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-entry">
+          <div class="row g-4 align-items-start">
+            <div class="col-md-3">
+              <a href="news/news-summer-party-2024.html">
+                <img src="static/images/news/labnews/labsummer2024_4.jpg" alt="Lab members">
+              </a>
+            </div>
+            <div class="col-md-9">
+              <h3><a href="news/news-summer-party-2024.html" class="entry-link">Lab Summer Party 2024</a></h3>
+              <p>The lab (and R25 research scholars) celebrated the end of the year and many accomplishments of the year!</p>
+              <span class="news-pill">Sep 26, 2024</span>
+              <a href="news/news-summer-party-2024.html" class="read-more ms-3">Read more &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- ------------------------------------------------------------------
+             OLDER NEWS (hidden until the visitor clicks the button).
+             When the list above gets long, cut the oldest items and paste them inside the
+             <div id="olderNews"> below.
+             ------------------------------------------------------------------ -->
+        <button class="btn btn-bw-dark mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#olderNews" aria-expanded="false" aria-controls="olderNews">
+          Show earlier news
+        </button>
+        <div class="collapse mt-3" id="olderNews">
+          <!-- PASTE OLDER NEWS ITEMS HERE (same block as above) -->
+        <div class="news-entry">
+          <div class="row g-4 align-items-start">
+            <div class="col-md-3">
+              <a href="news/podcast.html">
+                <img src="static/images/news/labnews/spotify.webp" alt="Spotify Logo">
+              </a>
+            </div>
+            <div class="col-md-9">
+              <h3><a href="news/podcast.html" class="entry-link">Pitt CSD Podcast</a></h3>
+              <p>Aravind speaks about his path to research and the interests of the lab on the Pitt CSD podcast.</p>
+              <span class="news-pill">Jul 28, 2023</span>
+              <a href="news/podcast.html" class="read-more ms-3">Read more &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+         <div class="news-entry">
+          <div class="row g-4 align-items-start">
+            <div class="col-md-9">
+              <h3><a href="news/paperalert.html" class="entry-link">Paper Alert: APD Screening referrals</a></h3>
+              <p>Paper is out now!</p>
+              <span class="news-pill">Oct 16, 2023</span>
+              <a href="news/paperalert.html" class="read-more ms-3">Read more &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-entry">
+          <div class="row g-4 align-items-start">
+            <div class="col-md-3">
+              <a href="news/summer-party-2023.html">
+                <img src="static/images/news/labnews/Labsummer2023_2.jpg" alt="Lab members at the 2023 summer party">
+              </a>
+            </div>
+            <div class="col-md-9">
+              <h3><a href="news/summer-party-2023.html" class="entry-link">Annual Lab Summer Party, and farewells to Jacie, Kimmy and Claire</a></h3>
+              <p>The lab celebrated the successes of the year and said farewell to Jacie, Kimmy and Claire (who joined us in spirit).</p>
+              <span class="news-pill">Jul 3, 2023</span>
+              <a href="news/summer-party-2023.html" class="read-more ms-3">Read more &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-entry">
+          <div class="row g-4 align-items-start">
+            <div class="col-md-3">
+              <a href="news/aro-2023.html">
+                <img src="static/images/news/labnews/aro2023_3.avif" alt="Lab members at the ARO 2023 meeting in Orlando">
+              </a>
+            </div>
+            <div class="col-md-9">
+              <h3><a href="news/aro-2023.html" class="entry-link">Parthalab @ ARO 2023!</a></h3>
+              <p>The lab had a strong presence at the Midwinter meeting of the Association for Research in Otolaryngology held in Orlando, Florida.</p>
+              <span class="news-pill">Apr 13, 2023</span>
+              <a href="news/aro-2023.html" class="read-more ms-3">Read more &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- HIDDEN UNTIL READY: this post's text and date still need to be added to news/summer-party-2022.html.
+             When they are, delete this line and the closing line below, and fill in the summary and date.
+        <div class="news-entry">
+          <div class="row g-4 align-items-start">
+            <div class="col-md-12">
+              <h3><a href="news/summer-party-2022.html" class="entry-link">Annual Lab Summer Party, and farewells to Tori and Mayan</a></h3>
+              <p>REPLACE: one or two sentences from the post.</p>
+              <span class="news-pill">REPLACE: date</span>
+              <a href="news/summer-party-2022.html" class="read-more ms-3">Read more &rarr;</a>
+            </div>
+          </div>
+        </div>
+        -->
+
+        <div class="news-entry">
+          <div class="row g-4 align-items-start">
+            <div class="col-md-12">
+              <h3><a href="news/inaugural-lab-party.html" class="entry-link">Inaugural Lab Party!</a></h3>
+              <p>The lab celebrated the end of the semester with some homemade pizzas by Aravind.</p>
+              <span class="news-pill">May 6, 2021</span>
+              <a href="news/inaugural-lab-party.html" class="read-more ms-3">Read more &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         2. LAB IN THE MEDIA
+         ========================================================================== -->
+    <section id="media" class="band band-grey news-section">
+      <div class="container">
+        <h2 class="mb-4">Press Releases & Media Coverage</h2>
+
+        <!-- ------------------------------------------------------------------
+             COPY THIS BLOCK TO ADD A MEDIA LINK. Paste it right below this comment (newest first).
+
+        <div class="media-row">
+          <div class="media-outlet">Outlet name</div>
+          <div class="media-title"><a href="https://link-to-the-article" target="_blank">Headline of the article</a></div>
+          <div class="media-year">2026</div>
+        </div>
+             ------------------------------------------------------------------ -->
+
+        <!-- PASTE NEW MEDIA LINKS HERE (newest first) -->
+
+        <!-- Your existing links. Years are left blank where I could not tell; add them if you like. -->
+        <div class="media-row">
+          <div class="media-outlet">University of Pittsburgh Health Sciences</div>
+          <div class="media-title"><a href="https://www.health.pitt.edu/news/did-you-hear-next-gen-hearing-diagnostics-reveal-hidden-pathologies" target="_blank">Did You Hear? Next-Gen Hearing Diagnostics Reveal Hidden Pathologies</a></div>
+          <div class="media-year"></div>
+        </div>
+        <div class="media-row">
+          <div class="media-outlet">Hearing Health Matters</div>
+          <div class="media-title"><a href="https://hearinghealthmatters.org/hearing-news-watch/2024/efr-test-auditory-objective-measure/" target="_blank">New Objective Diagnostic Tool Developed to Detect Hidden Hearing Loss and More</a></div>
+          <div class="media-year">2024</div>
+        </div>
+        <div class="media-row">
+          <div class="media-outlet">PittCSD podcast</div>
+          <div class="media-title"><a href="https://open.spotify.com/episode/0quGnXwSwsCsXQJ3C7Qihq" target="_blank">PittCSD podcast</a></div>
+          <div class="media-year"></div>
+        </div>
+        <div class="media-row">
+          <div class="media-outlet">MedicalResearch.com</div>
+          <div class="media-title"><a href="https://medicalresearch.com/author-interviews/brain-biomarkers-may-lead-to-clinical-tests-for-hidden-hearing-loss/53178/" target="_blank">Brain biomarkers may lead to clinical tests for hidden hearing loss</a></div>
+          <div class="media-year"></div>
+        </div>
+        <div class="media-row">
+          <div class="media-outlet">Harvard Gazette</div>
+          <div class="media-title"><a href="https://news.harvard.edu/gazette/story/2020/01/why-it-may-be-hard-to-follow-conversations-in-noisy-environments/" target="_blank">Hidden hearing loss revealed</a></div>
+          <div class="media-year">2020</div>
+        </div>
+        <div class="media-row">
+          <div class="media-outlet">ScienceDaily</div>
+          <div class="media-title"><a href="https://www.sciencedaily.com/releases/2020/01/200128114636.htm" target="_blank">Biomarkers of brain function may lead to clinical tests for hidden hearing loss</a></div>
+          <div class="media-year">2020</div>
+        </div>
+        <div class="media-row">
+          <div class="media-outlet">Business Standard</div>
+          <div class="media-title"><a href="https://www.business-standard.com/article/news-ani/two-brain-function-biomarkers-might-explain-hidden-hearing-loss-study-120012900268_1.html" target="_blank">Two brain function biomarkers might explain hidden hearing loss: Study</a></div>
+          <div class="media-year">2020</div>
+        </div>
+        <div class="media-row">
+          <div class="media-outlet">Healthy Hearing</div>
+          <div class="media-title"><a href="https://www.healthyhearing.com/report/53066-Hidden-hearing-loss" target="_blank">Understanding Hidden Hearing loss</a></div>
+          <div class="media-year"></div>
+        </div>
+        <div class="media-row">
+          <div class="media-outlet">eLife Sciences Podcast</div>
+          <div class="media-title"><a href="https://elifesciences.org/podcast/episode64" target="_blank">eLife Sciences Podcast</a></div>
+          <div class="media-year"></div>
+        </div>
+        <div class="media-row">
+          <div class="media-outlet">Psychology Today</div>
+          <div class="media-title"><a href="https://www.psychologytoday.com/us/blog/open-gently/202002/why-cant-you-hear" target="_blank">Why can't you hear?</a></div>
+          <div class="media-year">2020</div>
+        </div>
+        <div class="media-row">
+          <div class="media-outlet">AARP</div>
+          <div class="media-title"><a href="https://www.aarp.org/health/conditions-treatments/info-2020/hidden-hearing-loss.html" target="_blank">Do You Have Hidden Hearing Loss?</a></div>
+          <div class="media-year">2020</div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         3. AWARDS
+         ========================================================================== -->
+    <section id="awards" class="band news-section">
+      <div class="container">
+        <h2 class="mb-4">Awards</h2>
+
+        <!-- ------------------------------------------------------------------
+             COPY THIS BLOCK TO ADD AN AWARD.
+             Paste it INSIDE the <div class="row g-4"> below, at the top (newest first).
+             Cards sit three across on a computer and stack on a phone.
+             The headline (and the picture, if you use one) open the award's own page. To make that
+             page, copy news-entry-template.html, rename it (for example award-best-poster-2026.html),
+             and use that same file name in the href="..." spots below.
+
+          VERSION A: with the trophy icon
+          <div class="col-md-4">
+            <div class="award-card">
+              <div class="award-icon"><i class="fas fa-trophy"></i></div>
+              <div class="award-year">2026</div>
+              <h3><a href="award-page-name.html" class="entry-link">Name of the award</a></h3>
+              <p class="mb-2">Recipient name. One line about what it was for (optional).</p>
+              <a href="award-page-name.html" class="read-more">Read more &rarr;</a>
+            </div>
+          </div>
+
+          VERSION B: with a picture instead of the icon
+          <div class="col-md-4">
+            <div class="award-card">
+              <a href="award-page-name.html"><img src="static/images/news/award-photo.jpg" alt="Describe the picture"></a>
+              <div class="award-year">2026</div>
+              <h3><a href="award-page-name.html" class="entry-link">Name of the award</a></h3>
+              <p class="mb-2">Recipient name. One line about what it was for (optional).</p>
+              <a href="award-page-name.html" class="read-more">Read more &rarr;</a>
+            </div>
+          </div>
+             ------------------------------------------------------------------ -->
+
+        <div class="row g-4">
+          <!-- PASTE NEW AWARDS HERE (newest first) -->
+
+          <div class="col-md-4">
+            <div class="award-card">
+              <div class="award-icon"><i class="fas fa-trophy"></i></div>
+              <div class="award-year">2023</div>
+              <h3><a href="awards/KimmyAAA.html" class="entry-link">AAA James Jerger Award for Excellence in Student Research</a></h3>
+              <p class="mb-2">Kimberly Yurasits wins award at AAA</p>
+              <a href="awards/KimmyAAA.html" class="read-more">Read more &rarr;</a>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="award-card">
+              <div class="award-icon"><i class="fas fa-trophy"></i></div>
+              <div class="award-year">2022</div>
+              <h3><a href="awards/jerger-award-2022.html" class="entry-link">James Jerger Award for Excellence in Student Research</a></h3>
+              <p class="mb-2">Tori Cancel wins award at AAA</p>
+              <a href="awards/jerger-award-2022.html" class="read-more">Read more &rarr;</a>
+            </div>
+          </div>
+
+         <div class="col-md-4">
+            <div class="award-card">
+              <div class="award-icon"><i class="fas fa-trophy"></i></div>
+              <div class="award-year">2022</div>
+              <h3><a href="awards/mcmurtry-2022.html" class="entry-link">McMurtry Fellowship</a></h3>
+              <p class="mb-2">Claire Mitchell is the 2022 McMurtry Family Undergraduate Research Award recipient</p>
+              <a href="awards/mcmurtry-2022.html" class="read-more">Read more &rarr;</a>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="award-card">
+              <div class="award-icon"><i class="fas fa-trophy"></i></div>
+              <div class="award-year">2022</div>
+              <h3><a href="awards/poster-award-2022.html" class="entry-link">Best Presentation at research poster competition</a></h3>
+              <p class="mb-2">Mayan, a senior at Taylor Allderdice High School, wins Best Poster at her school's research poster competition</p>
+              <a href="awards/poster-award-2022.html" class="read-more">Read more &rarr;</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         4. GALLERY (click a photo to open it larger; arrows move between photos)
+         ========================================================================== -->
+    <section id="gallery" class="band band-grey news-section">
+      <div class="container">
+        <h2 class="mb-4">Gallery</h2>
+
+        <!-- ------------------------------------------------------------------
+             COPY THIS BLOCK TO ADD A PHOTO.
+             (The full set of photos lives on gallery.html. Add a photo there too, and here only if you want it in
+             this short selection.)
+             Paste it INSIDE the <div class="row g-3"> below.
+             Change the picture path in BOTH places (href and src), the description (alt),
+             and the caption (data-caption). Photos are cropped to the same shape in the grid
+             but shown whole when opened.
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <a href="static/images/gallery/photo-name.jpg" class="gallery-item" data-caption="Caption shown under the large photo">
+              <img src="static/images/gallery/photo-name.jpg" alt="Describe the photo" loading="lazy">
+            </a>
+          </div>
+             ------------------------------------------------------------------ -->
+
+        <div class="row g-3" id="galleryGrid">
+          <!-- Example photos. REPLACE the file names and captions, then delete any you do not need. -->
+          <div class="col-6 col-md-4 col-lg-3">
+            <a href="static/images/news/gallery/labmeet3_s.PNG" class="gallery-item" data-caption="Online Lab Meeting">
+              <img src="static/images/news/gallery/labmeet3_s.PNG" alt="Covid Times" loading="lazy">
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <a href="static/images/news/gallery/people.jpg" class="gallery-item" data-caption="From left to right: Dr. Samantha Hauser, Dr. Aravind Parthasarathy, and Dr. Hari Bharadwaj">
+              <img src="static/images/news/gallery/people.jpg" alt="Cool People" loading="lazy">
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <a href="static/images/news/gallery/pizza4.jpg" class="gallery-item" data-caption="Homemade Pizza by Aravind">
+              <img src="static/images/news/gallery/pizza4.jpg" alt="Homemade Pizza" loading="lazy">
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <a href="static/images/news/gallery/Labsummer2024_5.jpg" class="gallery-item" data-caption="Bowling scores">
+              <img src="static/images/news/gallery/Labsummer2024_5.jpg" alt="Bowling results" loading="lazy">
+            </a>
+          </div>
+        </div>
+
+        <!-- Opens the full gallery page. The photos shown here are a short selection of those on gallery.html -->
+        <div class="mt-4">
+          <a href="gallery.html" class="btn btn-bw-dark">See more photos &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Large-photo viewer for the gallery (do not edit) -->
+  <div class="modal fade" id="galleryModal" tabindex="-1" aria-label="Photo viewer" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-0 text-center position-relative">
+          <button type="button" class="gallery-nav gallery-prev" aria-label="Previous photo">&#10094;</button>
+          <img id="galleryModalImg" src="" alt="">
+          <p id="galleryModalCaption" class="mt-3 mb-0"></p>
+          <button type="button" class="gallery-nav gallery-next" aria-label="Next photo">&#10095;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ FOOTER (same on every page) ============ -->
+  <footer class="custom-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Contact</h5>
+          <img src="static/images/pittsecondaryreverse.png" alt="Pitt Logo" class="footer-logo">
+          <address class="smaller-text">
+            Department of Communication Science and Disorders<br>
+            3396 Fifth Avenue<br>
+            Pittsburgh, PA 15213
+          </address>
+          <p class="smallest-text">&copy; 2026 Parthasarathy Lab</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Links</h5>
+          <a href="https://www.shrs.pitt.edu/csd" target="_blank" class="footer-link">Department of Communication Science and Disorders</a><br>
+          <a href="http://phrc.pitt.edu/" target="_blank" class="footer-link">Pittsburgh Hearing Research Center</a><br>
+        </div>
+        <div class="col-md-4 text-end">
+          <h5>Connect</h5>
+          <div class="social-icons">
+            <a href="https://scholar.google.com/citations?hl=en&user=4e8qQywAAAAJ" target="_blank" title="Google Scholar"><i class="fab fa-google"></i></a>
+            <a href="https://bsky.app/profile/aravindhearing.bsky.social" target="_blank" title="Bluesky"><i class="fa-brands fa-bluesky"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script>
+    /* Gallery viewer: opens the clicked photo larger, with previous/next arrows and arrow-key support */
+    (function () {
+      var grid = document.getElementById('galleryGrid');
+      var modalEl = document.getElementById('galleryModal');
+      if (!grid || !modalEl) return;
+      var img = document.getElementById('galleryModalImg');
+      var cap = document.getElementById('galleryModalCaption');
+      var modal = new bootstrap.Modal(modalEl);
+      var index = 0;
+
+      function items() { return Array.prototype.slice.call(grid.querySelectorAll('.gallery-item')); }
+      function show(i) {
+        var list = items();
+        if (!list.length) return;
+        index = (i + list.length) % list.length;
+        var a = list[index];
+        img.src = a.getAttribute('href');
+        img.alt = a.querySelector('img') ? a.querySelector('img').alt : '';
+        cap.textContent = a.getAttribute('data-caption') || '';
+      }
+
+      grid.addEventListener('click', function (e) {
+        var a = e.target.closest('.gallery-item');
+        if (!a) return;
+        e.preventDefault();
+        show(items().indexOf(a));
+        modal.show();
+      });
+      modalEl.querySelector('.gallery-prev').addEventListener('click', function () { show(index - 1); });
+      modalEl.querySelector('.gallery-next').addEventListener('click', function () { show(index + 1); });
+      document.addEventListener('keydown', function (e) {
+        if (!modalEl.classList.contains('show')) return;
+        if (e.key === 'ArrowLeft') show(index - 1);
+        if (e.key === 'ArrowRight') show(index + 1);
+      });
+    })();
+  </script>
+  </body>
+</html>

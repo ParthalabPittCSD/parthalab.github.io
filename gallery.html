@@ -1,0 +1,241 @@
+<!doctype html>
+<!--
+  GALLERY PAGE
+  The full photo gallery. To add a photo, copy a COPY THIS BLOCK template and paste it inside the grid.
+  Save as gallery.html in the repo's top folder.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery | Parthasarathy Lab</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <link rel="icon" type="image/x-icon" href="static/images/favicons/favicon.ico">
+
+    <style>
+      /* Gallery */
+      .gallery-item { display: block; position: relative; overflow: hidden; background: #000; }
+      .gallery-item img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; transition: transform .3s, opacity .3s; }
+      .gallery-item:hover img, .gallery-item:focus img { transform: scale(1.05); opacity: .85; }
+      #galleryModal .modal-content { background: #000; color: #fff; border: 0; border-radius: 0; }
+      #galleryModal img { max-height: 75vh; width: auto; max-width: 100%; margin: 0 auto; display: block; }
+      #galleryModal .gallery-nav { position: absolute; top: 40%; z-index: 2; background: rgba(0,0,0,.5); color: #fff; border: 0; font-size: 1.6rem; padding: .5rem .9rem; }
+      #galleryModal .gallery-prev { left: .5rem; }
+      #galleryModal .gallery-next { right: .5rem; }
+      .gallery-back { display: inline-block; margin-bottom: 1.5rem; color: #000; text-decoration: none; font-weight: 600; }
+      .gallery-back:hover { text-decoration: underline; }
+    </style>
+  </head>
+
+  <body>
+
+  <!-- ============ NAVBAR (same on every page; only the "active" link changes) ============ -->
+  <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+    <div class="container">
+      <a class="navbar-brand custom-navbar-brand" href="https://www.pitt.edu/">
+        <img src="static/images/pittsecondaryreverse.png" width="135" alt="Pitt">
+      </a>
+      <span class="border-start">
+        <h3 class="custom-navbar-text ms-4 mt-2">Parthasarathy Lab</h3>
+      </span>
+      <button class="navbar-toggler custom-navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="menu-label">Menu</span>
+        <span class="toggle-arrow" aria-hidden="true"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item custom-nav-item"><a class="nav-link custom-nav-link" href="index.html">Home</a></li>
+          <li class="nav-item custom-nav-item"><a class="nav-link custom-nav-link" href="research.html">Research</a></li>
+          <li class="nav-item custom-nav-item"><a class="nav-link custom-nav-link" href="people.html">Members</a></li>
+          <li class="nav-item custom-nav-item"><a class="nav-link custom-nav-link" href="publications.html">Publications</a></li>
+          <li class="nav-item custom-nav-item"><a class="nav-link custom-nav-link active" href="news.html">News</a></li>
+          <li class="nav-item custom-nav-item"><a class="nav-link custom-nav-link" href="positions.html">Positions</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main role="main">
+    <section class="band">
+      <div class="container">
+
+        <a href="news.html#gallery" class="gallery-back">&larr; Back to News</a>
+        <h1 class="mb-4">Gallery</h1>
+
+        <!-- ------------------------------------------------------------------
+             COPY THIS BLOCK TO ADD A PHOTO.
+             Paste it INSIDE the <div class="row g-3"> below, at the top (newest first).
+             Change the picture path in BOTH places (href and src), the description (alt),
+             and the caption (data-caption). Photos are cropped to the same shape in the grid
+             but shown whole when opened.
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <a href="static/images/gallery/photo-name.jpg" class="gallery-item" data-caption="Caption shown under the large photo">
+              <img src="static/images/gallery/photo-name.jpg" alt="Describe the photo" loading="lazy">
+            </a>
+          </div>
+             ------------------------------------------------------------------ -->
+
+        <!-- OPTIONAL: to group photos (for example by year), end the grid below, add a heading such as
+             <h2 class="mt-5 mb-3">2025</h2>, and start a new <div class="row g-3" id="galleryGrid2"> ... </div>.
+             Note: previous/next arrows in the viewer only move within one grid. -->
+
+        <div class="row g-3" id="galleryGrid">
+          <div class="col-6 col-md-4 col-lg-3">
+            <a href="static/images/news/gallery/labmeet3_s.PNG" class="gallery-item" data-caption="Covid Times">
+              <img src="static/images/news/gallery/labmeet3_s.PNG" alt="Covid Times" loading="lazy">
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <a href="static/images/gallery/photo2.jpg" class="gallery-item" data-caption="REPLACE: caption for photo 2">
+              <img src="static/images/gallery/photo2.jpg" alt="REPLACE: describe photo 2" loading="lazy">
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <a href="static/images/gallery/photo3.jpg" class="gallery-item" data-caption="REPLACE: caption for photo 3">
+              <img src="static/images/gallery/photo3.jpg" alt="REPLACE: describe photo 3" loading="lazy">
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <a href="static/images/gallery/photo4.jpg" class="gallery-item" data-caption="REPLACE: caption for photo 4">
+              <img src="static/images/gallery/photo4.jpg" alt="REPLACE: describe photo 4" loading="lazy">
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <a href="static/images/gallery/photo5.jpg" class="gallery-item" data-caption="REPLACE: caption for photo 5">
+              <img src="static/images/gallery/photo5.jpg" alt="REPLACE: describe photo 5" loading="lazy">
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <a href="static/images/gallery/photo6.jpg" class="gallery-item" data-caption="REPLACE: caption for photo 6">
+              <img src="static/images/gallery/photo6.jpg" alt="REPLACE: describe photo 6" loading="lazy">
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <a href="static/images/gallery/photo7.jpg" class="gallery-item" data-caption="REPLACE: caption for photo 7">
+              <img src="static/images/gallery/photo7.jpg" alt="REPLACE: describe photo 7" loading="lazy">
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <a href="static/images/gallery/photo8.jpg" class="gallery-item" data-caption="REPLACE: caption for photo 8">
+              <img src="static/images/gallery/photo8.jpg" alt="REPLACE: describe photo 8" loading="lazy">
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <a href="static/images/gallery/photo9.jpg" class="gallery-item" data-caption="REPLACE: caption for photo 9">
+              <img src="static/images/gallery/photo9.jpg" alt="REPLACE: describe photo 9" loading="lazy">
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <a href="static/images/gallery/photo10.jpg" class="gallery-item" data-caption="REPLACE: caption for photo 10">
+              <img src="static/images/gallery/photo10.jpg" alt="REPLACE: describe photo 10" loading="lazy">
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <a href="static/images/gallery/photo11.jpg" class="gallery-item" data-caption="REPLACE: caption for photo 11">
+              <img src="static/images/gallery/photo11.jpg" alt="REPLACE: describe photo 11" loading="lazy">
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <a href="static/images/gallery/photo12.jpg" class="gallery-item" data-caption="REPLACE: caption for photo 12">
+              <img src="static/images/gallery/photo12.jpg" alt="REPLACE: describe photo 12" loading="lazy">
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Large-photo viewer for the gallery (do not edit) -->
+  <div class="modal fade" id="galleryModal" tabindex="-1" aria-label="Photo viewer" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-0 text-center position-relative">
+          <button type="button" class="gallery-nav gallery-prev" aria-label="Previous photo">&#10094;</button>
+          <img id="galleryModalImg" src="" alt="">
+          <p id="galleryModalCaption" class="mt-3 mb-0"></p>
+          <button type="button" class="gallery-nav gallery-next" aria-label="Next photo">&#10095;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ FOOTER (same on every page) ============ -->
+  <footer class="custom-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Contact</h5>
+          <img src="static/images/pittsecondaryreverse.png" alt="Pitt Logo" class="footer-logo">
+          <address class="smaller-text">
+            Department of Communication Science and Disorders<br>
+            3396 Fifth Avenue<br>
+            Pittsburgh, PA 15213
+          </address>
+          <p class="smallest-text">&copy; 2026 Parthasarathy Lab</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Links</h5>
+          <a href="https://www.shrs.pitt.edu/csd" target="_blank" class="footer-link">Department of Communication Science and Disorders</a><br>
+          <a href="http://phrc.pitt.edu/" target="_blank" class="footer-link">Pittsburgh Hearing Research Center</a><br>
+        </div>
+        <div class="col-md-4 text-end">
+          <h5>Connect</h5>
+          <div class="social-icons">
+            <a href="https://scholar.google.com/citations?hl=en&user=4e8qQywAAAAJ" target="_blank" title="Google Scholar"><i class="fab fa-google"></i></a>
+            <a href="https://bsky.app/profile/aravindhearing.bsky.social" target="_blank" title="Bluesky"><i class="fa-brands fa-bluesky"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script>
+    /* Gallery viewer: opens the clicked photo larger, with previous/next arrows and arrow-key support */
+    (function () {
+      var grid = document.getElementById('galleryGrid');
+      var modalEl = document.getElementById('galleryModal');
+      if (!grid || !modalEl) return;
+      var img = document.getElementById('galleryModalImg');
+      var cap = document.getElementById('galleryModalCaption');
+      var modal = new bootstrap.Modal(modalEl);
+      var index = 0;
+
+      function items() { return Array.prototype.slice.call(grid.querySelectorAll('.gallery-item')); }
+      function show(i) {
+        var list = items();
+        if (!list.length) return;
+        index = (i + list.length) % list.length;
+        var a = list[index];
+        img.src = a.getAttribute('href');
+        img.alt = a.querySelector('img') ? a.querySelector('img').alt : '';
+        cap.textContent = a.getAttribute('data-caption') || '';
+      }
+
+      grid.addEventListener('click', function (e) {
+        var a = e.target.closest('.gallery-item');
+        if (!a) return;
+        e.preventDefault();
+        show(items().indexOf(a));
+        modal.show();
+      });
+      modalEl.querySelector('.gallery-prev').addEventListener('click', function () { show(index - 1); });
+      modalEl.querySelector('.gallery-next').addEventListener('click', function () { show(index + 1); });
+      document.addEventListener('keydown', function (e) {
+        if (!modalEl.classList.contains('show')) return;
+        if (e.key === 'ArrowLeft') show(index - 1);
+        if (e.key === 'ArrowRight') show(index + 1);
+      });
+    })();
+  </script>
+  </body>
+</html>
