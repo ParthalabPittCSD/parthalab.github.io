@@ -15,7 +15,7 @@
 }
 /* ---------- Colors (change here to restyle everything) ---------- */
 :root {
-  --ink:   #000;      /* main black */
+  --ink:   #1c1b1b;      /* main black */
   --paper: #fff;      /* main white */
   --grey:  #f2f2f2;   /* light band background */
   --mid:   #555;      /* secondary text */
@@ -133,7 +133,7 @@ a:hover { color: var(--mid); }
 
 /* Hero carousel: rotating photos behind fixed text */
 .hero { position: relative; color: #fff; background: #222; }
-.hero .carousel-item { height: clamp(280px, 26vw, 460px); }   /* short banner: about 460px tall on a wide screen, 280px minimum on a phone */
+.hero .carousel-item { height: clamp(280px, 26vw, 1080px); }   /* short banner: about 460px tall on a wide screen, 280px minimum on a phone */
 .hero-slide {
   position: absolute; inset: 0;
   background-size: cover; background-position: center; background-color: #222;
@@ -203,7 +203,7 @@ a:hover { color: var(--mid); }
 .team-card { border: none; text-align: center; }
 
 .team-card-img {
-  border-radius: 50%;
+  border-radius: 0%;
   object-fit: cover;
   object-position: center;
   width: 14rem;
@@ -221,7 +221,7 @@ a:hover { color: var(--mid); }
 .profile-link:focus .fas,
 .profile-link:hover .fas { color: var(--mid); }
 .profile-link:focus .team-card-img,
-.profile-link:hover .team-card-img { box-shadow: 0 0 10px 5px #000; }
+.profile-link:hover .team-card-img { box-shadow: 0 0 10px 5px #515058; }
 
 .team-card-body { padding: 15px; }
 .team-social-icons { font-size: 18px; }
@@ -264,3 +264,17 @@ main li {
   font-size: 1.15rem;
   line-height: 1.7;
 }
+
+      .news-section { scroll-margin-top: 90px; } 
+
+      .entry-wrap { max-width: 820px; }
+      .entry-back { display: inline-block; margin-bottom: 1.5rem; color: #000; text-decoration: none; font-weight: 600; }
+      .entry-back:hover { text-decoration: underline; }
+      .entry-date { color: #555; font-size: .95rem; margin-bottom: .5rem; }
+      .entry-hero { width: 100%; height: auto; display: block; margin: 1.5rem 0; }
+      .entry-body p, .entry-body li { font-size: 1.1rem; line-height: 1.7; }
+      .entry-body h2 { font-size: 1.5rem; margin-top: 2rem; }
+      .entry-photos img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
+      .entry-caption { font-size: .85rem; color: #555; margin-top: .35rem; }
+
+
