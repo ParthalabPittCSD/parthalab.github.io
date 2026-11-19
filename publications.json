@@ -1,88 +1,220 @@
 {
   "publications": [
-    
-        {
-      "year": 2025,
-      "authors": "Sorensen, D., Sugai, J., Parthasarathy, A., Hancock, K., & Polley, D.",
-      "title": "The slowest timescales of neural synchronization reveal the strongest influence of auditory distraction",
-      "venue": "Frontiers in Human Neuroscience, 2025",
+    {
+      "year": 2026,
+      "authors": "Bharadwaj, S., Dymowski, C., Batik, E., Caplan, G., Shepler, C., Yagan, A., Zhang, X., Bharadwaj, H., & Parthasarathy, A.",
+      "title": "Distinct Roles of Working Memory and Inhibitory Control in Speech-in-Noise Perception",
+      "venue": "bioRxiv, 2026",
       "tags": [
         "aging",
-        "evoked-potentials"
+        "speech-in-noise",
+        "human",
+        "preprint"
+      ],
+      "links": {
+        "pdf": "https://europepmc.org/api/getPdf?pmcid=PMC13596420"
+      }
+    },
+
+    {
+      "year": 2026,
+      "authors": "Parthasarathy, A. & Bartlett, E.",
+      "title": "Central Auditory Decline Precedes Cochlear Deficits in a D-Galactose Mimetic Model of Aging",
+      "venue": "bioRxiv, 2026",
+      "tags": [
+        "aging",
+        "evoked-potentials",
+        "rat",
+        "preprint"
+      ],
+      "links": {
+        "pdf": "https://www.biorxiv.org/content/10.64898/2026.05.30.729003v1.full.pdf"
+      }
+    },
+
+    {
+      "year": 2026,
+      "authors": "Jedlicka, D., Bharadwaj, H., Mormer, E., Parthasarathy, A., & Palmer, C.",
+      "title": "Hearing Aid Use Among Veterans With Hearing Loss and Veterans With Normal Audiometric Thresholds Due to Self-Perceived Listening Difficulties",
+      "venue": "Journal of Speech, Language, and Hearing Research, 2026",
+      "tags": [
+        "human",
+        "clinical"
+      ],
+      "links": {
+        "pdf": "https://pubs.asha.org/doi/pdf/10.1044/2025_JSLHR-25-00629"
+      }
+    },
+
+    {
+      "year": 2026,
+      "authors": "Andrino, L., Gall, R., Klara, J., Akcakaya, M., Bartlett, E., & Parthasarathy, A.",
+      "title": "A Rapid, Machine-Learning Readout of Cochlear Neural Degeneration That Transfers from Animals to Humans",
+      "venue": "bioRxiv, 2026",
+      "tags": [
+        "synaptopathy",
+        "aging",
+        "evoked-potentials",
+        "cross-species",
+        "human",
+        "gerbil",
+        "immunohistology",
+        "machine",
+        "preprint"
+      ],
+      "links": {
+        "pdf": "https://europepmc.org/api/getPdf?pmcid=PMC13648425"
+      }
+    },
+
+    {
+      "year": 2025,
+      "authors": "Zhen, L., Parida, S., McHaney, J., Zink, M., Chandrasekaran, B., & Parthasarathy, A.",
+      "title": "Degraded Neural Coding of Temporal Fine Structure with Age Predicts Effortful Listening in Multi-Talker Environments",
+      "venue": "bioRxiv, 2025",
+      "tags": [
+        "aging",
+        "speech-in-noise",
+        "evoked-potentials",
+        "human",
+        "pupillometry",
+        "preprint"
+      ],
+      "links": {
+        "pdf": "https://www.biorxiv.org/content/10.1101/2025.11.17.688858v1.full.pdf",
+        "paper": "https://www.biorxiv.org/content/10.1101/2025.11.17.688858v1"
+      }
+    },
+
+    {
+      "year": 2025,
+      "authors": "McHaney, J., Guo, Z., Gnanateja, G., Parthasarathy, A., & Chandrasekaran, B.",
+      "title": "Neural Coding of Fundamental Frequency and Processing of Discrete Pitch Accents in Middle Age",
+      "venue": "European Journal of Neuroscience, 2025",
+      "tags": [
+        "aging",
+        "evoked-potentials",
+        "human"        
+      ],
+      "links": {
+        "pdf": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/ejn.70285"
+      }
+    },
+
+    {
+      "year": 2025,
+      "authors": "Jedlicka, D., Bharadwaj, H., Mormer, E., Parthasarathy, A., & Palmer, C.",
+      "title": "Evaluation of Diagnostic Measures in Veterans With Self-Perceived Hearing Handicap Despite Normal Audiometric Thresholds: A Rapid Scoping Review",
+      "venue": "Journal of Speech, Language, and Hearing Research, 2025",
+      "tags": [
+        "speech-in-noise",
+        "clinical"
+      ],
+      "links": {
+        "pdf": "https://pubs.asha.org/doi/epdf/10.1044/2025_JSLHR-25-00096",
+        "paper": "https://doi.org/10.1044/2025_JSLHR-25-00096"
+      }
+    },
+
+    {
+      "year": 2025,
+      "authors": "Sorensen, D., Sugai, J., Parthasarathy, A., Hancock, K., & Polley, D.",
+      "title": "The Slowest Timescales of Neural Synchronization Reveal the Strongest Influence of Auditory Distraction",
+      "venue": "Frontiers in Human Neuroscience, 2025",
+      "tags": [
+        "evoked-potentials",
+        "human"
       ],
       "links": {
         "pdf": "static/pdf/fhn_2025.pdf",
-        "paper" : "https://doi.org/10.3389/fnhum.2025.1623431"
+        "paper": "https://doi.org/10.3389/fnhum.2025.1623431"
       }
     },
 
     {
       "year": 2025,
-      "authors": "Zink, M., Zhen, L., McHaney, J., Klara, J., Yurasits, K., Cancel, V., Flemm, O., Mitchell, C., Datta, J., Chandresekaran, B., & Parthasarathy, A.",
+      "authors": "Stolyar, A., Katz, J., Dymowski, C., Lyons, T., Parthasarathy, A., Bharadwaj, H., Mormer, E., Palmer, C., & Wang, Y.",
+      "title": "Content Analysis of Over-the-Counter Hearing Aid Reviews",
+      "venue": "AMIA Summits on Translational Science Proceedings, 2025",
+      "tags": [
+        "human",
+        "clinical",
+        "machine"
+      ],
+      "links": {
+        "paper": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12150702/",
+        "pdf": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12150702/pdf/6818.pdf"
+      }
+    },
+
+    {
+      "year": 2025,
+      "authors": "Katz, J., Mormer, E., Parthasarathy, A., Bharadwaj, H., Wang, Y., & Palmer, C.",
+      "title": "Sound Advice: A Consumer’s Perspective on Navigating the World of Over-the-Counter Hearing Aids",
+      "venue": "Seminars in Hearing, 2025",
+      "tags": [
+        "human",
+        "clinical"
+      ],
+      "links": {
+        "paper": "https://www.thieme-connect.com/products/ejournals/html/10.1055/s-0045-1806805",
+        "pdf": "https://www.thieme-connect.com/products/ejournals/pdf/10.1055/s-0045-1806805.pdf"
+      }
+    },
+
+    {
+      "year": 2025,
+      "authors": "Guo, Z., McHaney, J., Parthasarathy, A., McFarlane, K., & Chandrasekaran, B.",
+      "title": "Reduced Neural Distinctiveness of Speech Representations in the Middle-Aged Brain",
+      "venue": "Neurobiology of Language, 2025",
+      "tags": [
+        "synaptopathy",
+        "aging",
+        "speech-in-noise",
+        "evoked-potentials",
+        "human",
+        "machine"
+      ],
+      "links": {
+        "pdf": "https://direct.mit.edu/nol/article-pdf/doi/10.1162/nol_a_00169/2511977/nol_a_00169.pdf",
+        "paper": "https://direct.mit.edu/nol/article/doi/10.1162/nol_a_00169/128715"
+      }
+    },
+
+    {
+      "year": 2025,
+      "authors": "Zink, M., Zhen, L., McHaney, J., Klara, J., Yurasits, K., Cancel, V., Flemm, O., Mitchell, C., Datta, J., Chandrasekaran, B., & Parthasarathy, A.",
       "title": "Increased Listening Effort and Cochlear Neural Degeneration Underlie Speech-in-Noise Deficits in Normal-Hearing Middle-Aged Adults",
       "venue": "eLife, 2025",
       "tags": [
+        "synaptopathy",
         "aging",
-        "evoked-potentials"
-      ],
-      "links": {
-        "paper" : "https://doi.org/10.7554/eLife.102823.3"
-      }
-    },
-
-    {
-      "year": 2025,
-      "authors": "Guo, Z., McHaney, J., Parthasarathy, A., McFarlane, K., & Chandrasekaran, B.",
-      "title": "Reduced Neural Distinctiveness of Speech Representations in the Middle-Aged Brain",
-      "venue": "Neurobiology of Language, 2025",
-      "tags": [
-        "aging",
-        "evoked-potentials"
-      ],
-      "links": {
-        "pdf": "https://watermark02.silverchair.com/nol_a_00169.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAAlcwggJTBgkqhkiG9w0BBwagggJEMIICQAIBADCCAjkGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMFv8JkNQD-qUgtVOcAgEQgIICClb6zOdZj7FZeArYypnw5jkiuUAUOuxaFgXA0kLLTtg-3J_L5XCiHlL9nSQWOJJn152zG1xFNHA9HHYu74-hblvQ286o794-v67Pb-d4AcYMhl-CVUpE4ZbVK1Kxp5AIJYFbOh61_seiB0IjMyBJLGV6s7H31BsRcWaZ4ZZPaS2eRRIXu4i379NNnnxoW-NEtAQ3GegDQf6uMyi2XUf7-9kpVRks5jTTgNbmndoqg1sYWqWdzxsb6gQlFKFLvmEzBndHCe5sYGy7SwighmD-prhSKl16SSzP7NLPu_aOXSrmu7Kl-KtZqh-uQm51bjD191vFr8uVe4gw3-BXk7QH4e_i0TWCnzeY-C2KVkEQchfT2-xPcHqQvpOWmEtblnzS0Odtafl09ltjIZhadJ9fvkDd9Lg_xoUPMU4_UnfWVOOIBN4SA8VMhI7ShpFbGZf-goFwt8ltFtG2gXlX8j1d-wzkjMe-ZrWiLTeloxPAGkO9vRvZUWAfUeDnGrYafj763BvpWp5OydiYN6fPpRSURaIPK6JreUSd5csfd0HesuviNCGpPKQjItdWSYWQ_JJaf-L0hvP2C8O_a8b9dnxzJkCiWpFEwMew3ORIq9a1srh7szyXYfV5n-zM0ODcRQ8Z2Qp6Lrl9tyFzObswQUHhd7Bqt1tJLqWqN7gOV_PCooWo5uyGOV6p07Z5nA",
-        "paper" : "https://direct.mit.edu/nol/article/doi/10.1162/nol_a_00169/128715"
-      }
-    },
-
-    {
-      "year": 2025,
-      "authors": "Guo, Z., McHaney, J., Parthasarathy, A., McFarlane, K., & Chandrasekaran, B.",
-      "title": "Reduced Neural Distinctiveness of Speech Representations in the Middle-Aged Brain",
-      "venue": "Neurobiology of Language, 2025",
-      "tags": [
-        "aging",
-        "evoked-potentials"
-      ],
-      "links": {
-        "pdf": "https://watermark02.silverchair.com/nol_a_00169.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAAlcwggJTBgkqhkiG9w0BBwagggJEMIICQAIBADCCAjkGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMFv8JkNQD-qUgtVOcAgEQgIICClb6zOdZj7FZeArYypnw5jkiuUAUOuxaFgXA0kLLTtg-3J_L5XCiHlL9nSQWOJJn152zG1xFNHA9HHYu74-hblvQ286o794-v67Pb-d4AcYMhl-CVUpE4ZbVK1Kxp5AIJYFbOh61_seiB0IjMyBJLGV6s7H31BsRcWaZ4ZZPaS2eRRIXu4i379NNnnxoW-NEtAQ3GegDQf6uMyi2XUf7-9kpVRks5jTTgNbmndoqg1sYWqWdzxsb6gQlFKFLvmEzBndHCe5sYGy7SwighmD-prhSKl16SSzP7NLPu_aOXSrmu7Kl-KtZqh-uQm51bjD191vFr8uVe4gw3-BXk7QH4e_i0TWCnzeY-C2KVkEQchfT2-xPcHqQvpOWmEtblnzS0Odtafl09ltjIZhadJ9fvkDd9Lg_xoUPMU4_UnfWVOOIBN4SA8VMhI7ShpFbGZf-goFwt8ltFtG2gXlX8j1d-wzkjMe-ZrWiLTeloxPAGkO9vRvZUWAfUeDnGrYafj763BvpWp5OydiYN6fPpRSURaIPK6JreUSd5csfd0HesuviNCGpPKQjItdWSYWQ_JJaf-L0hvP2C8O_a8b9dnxzJkCiWpFEwMew3ORIq9a1srh7szyXYfV5n-zM0ODcRQ8Z2Qp6Lrl9tyFzObswQUHhd7Bqt1tJLqWqN7gOV_PCooWo5uyGOV6p07Z5nA",
-        "paper" : "https://direct.mit.edu/nol/article/doi/10.1162/nol_a_00169/128715"
-      }
-    },
-
-    {
-      "year": 2025,
-      "authors": "Zink, M., Zhen, L., McHaney, J., Klara, J., Yurasits, K., Cancel, V., Flemm, O., Mitchel, C., Datta, Jyotishka., Chandrasekaran, B., & Parthasarathy, A.",
-      "title": "Increased Listening Effort and Cochlear Neural Degeneration Underlie Speech-In-Noise Deficits in Normal-Hearing Middle-Aged Adults",
-      "venue": "eLife, 2025",
-      "tags": [
         "speech-in-noise",
-        "synaptopathy"
+        "evoked-potentials",
+        "cross-species",
+        "human",
+        "gerbil",
+        "immunohistology",
+        "pupillometry"
       ],
       "links": {
-        "paper": "https://elifesciences.org/articles/102823",
+        "paper": "https://doi.org/10.7554/eLife.102823.3",
         "pdf": "static/pdf/elife-102823-v1.pdf"
       }
     },
 
     {
       "year": 2024,
-      "authors": "Parida, S., Yurasits, V., Cancel, V., Zink M., Mitchell, C., Zilliak M., Harrison, A., Bartlett, E., & Parthasarathy, A.",
+      "authors": "Parida, S., Yurasits, K., Cancel, V., Zink, M., Mitchell, C., Ziliak, M., Harrison, A., Bartlett, E., & Parthasarathy, A.",
       "title": "Rapid and Objective Assessment of Auditory Temporal Processing Using Dynamic Amplitude-Modulated Stimuli",
       "venue": "Communications Biology, 2024",
       "tags": [
-        "aging",
-        "evoked-potentials"
+        "evoked-potentials",
+        "cross-species",
+        "human",
+        "gerbil",
+        "mouse",
+        "rat"
       ],
       "links": {
         "pdf": "static/pdf/s42003.pdf",
@@ -92,12 +224,14 @@
 
     {
       "year": 2024,
-      "authors": "McHaney, J., Hancock, D., Polley, D., & Parathasarathy, A.",
+      "authors": "McHaney, J., Hancock, K., Polley, D., & Parthasarathy, A.",
       "title": "Sensory Representations and Pupil-Indexed Listening Effort Provide Complementary Contributions to Multi-Talker Speech Intelligibility",
       "venue": "Scientific Reports, 2024",
       "tags": [
         "speech-in-noise",
-        "synaptopathy"
+        "evoked-potentials",
+        "human",
+        "pupillometry"
       ],
       "links": {
         "paper": "https://www.nature.com/articles/s41598-024-81673-8",
@@ -111,8 +245,9 @@
       "title": "Neurometric Amplitude Modulation Detection in the Inferior Colliculus of Young and Aged Rats",
       "venue": "Hearing Research, 2024",
       "tags": [
-        "speech-in-noise",
-        "synaptopathy"
+        "aging",
+        "rat",
+        "neurophys"
       ],
       "links": {
         "paper": "https://doi.org/10.1016/j.heares.2024.109028"
@@ -125,8 +260,9 @@
       "title": "A Data-Driven Approach to Identify a Rapid Screener for Auditory Processing Disorder Testing Referrals in Adults",
       "venue": "Scientific Reports, 2023",
       "tags": [
-        "aging",
-        "evoked-potentials"
+        "speech-in-noise",
+        "human",
+        "clinical"
       ],
       "links": {
         "paper": "https://www.nature.com/articles/s41598-023-40645-0",
@@ -140,23 +276,27 @@
       "title": "Neural Signatures of Auditory Hypersensitivity Following Acoustic Trauma",
       "venue": "eLife, 2022",
       "tags": [
-        "aging",
-        "evoked-potentials"
+        "synaptopathy",
+        "mouse",
+        "neurophys",
+        "immunohistology"
       ],
       "links": {
         "paper": "https://doi.org/10.7554/eLife.80015",
         "pdf": "static/pdf/elife-80015-v2.pdf"
       }
     },
-    
+
     {
       "year": 2022,
-      "authors": "Grant, K., Parthasarathy, A., Vasilkov, V., Caswell-Midwinter, B., Freitas, M., Gruttola, V., Polley, D., Liberman, M., & Maison, S.",
+      "authors": "Grant, K., Parthasarathy, A., Vasilkov, V., Caswell-Midwinter, B., Freitas, M., de Gruttola, V., Polley, D., Liberman, M., & Maison, S.",
       "title": "Predicting Neural Deficits in Sensorineural Hearing Loss from Word Recognition Scores",
       "venue": "Scientific Reports, 2022",
       "tags": [
+        "synaptopathy",
         "aging",
-        "evoked-potentials"
+        "human",
+        "clinical"
       ],
       "links": {
         "pubmed": "https://pubmed.ncbi.nlm.nih.gov/35739134/#",
@@ -170,8 +310,9 @@
       "title": "Idiopathic Sudden Sensorineural Hearing Loss: Speech Intelligibility Deficits Following Threshold Recovery",
       "venue": "Ear & Hearing, 2021",
       "tags": [
-        "aging",
-        "evoked-potentials"
+        "synaptopathy",
+        "human",
+        "clinical"
       ],
       "links": {
         "pubmed": "https://pubmed.ncbi.nlm.nih.gov/33259444/",
@@ -185,8 +326,8 @@
       "title": "Fluctuations in Subjective Tinnitus Ratings Over Time: Implications for Clinical Research",
       "venue": "Otology & Neurotology, 2020",
       "tags": [
-        "aging",
-        "evoked-potentials"
+        "human",
+        "clinical"
       ],
       "links": {
         "paper": "https://www.ovid.com/jnls/otology-neurotology/fulltext/10.1097/mao.0000000000002759~fluctuations-in-subjective-tinnitus-ratings-over-time",
@@ -196,12 +337,13 @@
 
     {
       "year": 2020,
-      "authors": "Parthasarathy, A., Pinto, S., Lewis, R., Goedicke, W., & Polley, D.",
+      "authors": "Parthasarathy, A., Romero Pinto, S., Lewis, R., Goedicke, W., & Polley, D.",
       "title": "Data-Driven Segmentation of Audiometric Phenotypes Across a Large Clinical Cohort",
       "venue": "Scientific Reports, 2020",
       "tags": [
-        "aging",
-        "evoked-potentials"
+        "human",
+        "clinical",
+        "machine"
       ],
       "links": {
         "paper": "https://www.nature.com/articles/s41598-020-63515-5",
@@ -215,23 +357,27 @@
       "title": "Audiometric Predictors of Bothersome Tinnitus in a Large Clinical Cohort of Adults with Sensorineural Hearing Loss",
       "venue": "Otology & Neurotology, 2020",
       "tags": [
-        "aging",
-        "evoked-potentials"
+        "human",
+        "clinical"
       ],
       "links": {
         "paper": "https://www.ovid.com/jnls/otology-neurotology/fulltext/10.1097/mao.0000000000002568~audiometric-predictors-of-bothersome-tinnitus-in-a-large",
         "pdf": "static/pdf/tinnitus2020.pdf"
       }
     },
-    
+
     {
       "year": 2020,
-      "authors": "Parthasarathy, A., Datta, Jyotishka., Torres, J., Hopkins, C., & Bartlett, E.",
+      "authors": "Parthasarathy, A., Hancock, K., Bennett, K., DeGruttola, V., & Polley, D.",
       "title": "Bottom-Up and Top-Down Neural Signatures of Disordered Multi-Talker Speech Perception in Adults with Normal Hearing",
       "venue": "eLife, 2020",
       "tags": [
-        "aging",
-        "evoked-potentials"
+        "synaptopathy",
+        "speech-in-noise",
+        "evoked-potentials",
+        "human",
+        "clinical",
+        "pupillometry"
       ],
       "links": {
         "paper": "https://elifesciences.org/articles/51419",
@@ -245,8 +391,13 @@
       "title": "Age-Related Changes in Neural Coding of Envelope Cues: Peripheral Declines and Central Compensation",
       "venue": "Neuroscience, 2019",
       "tags": [
+        "synaptopathy",
         "aging",
-        "evoked-potentials"
+        "evoked-potentials",
+        "cross-species",
+        "mouse",
+        "rat",
+        "neurophys"
       ],
       "links": {
         "paper": "https://doi.org/10.1016/j.neuroscience.2018.12.007"
@@ -255,27 +406,31 @@
 
     {
       "year": 2019,
-      "authors": "Parthasarathy, A., Hermann, B., & Bartlett, E.",
+      "authors": "Parthasarathy, A., Herrmann, B., & Bartlett, E.",
       "title": "Aging Alters Envelope Representations of Speech-Like Sounds in the Inferior Colliculus",
       "venue": "Neurobiology of Aging, 2019",
       "tags": [
         "aging",
-        "evoked-potentials"
+        "evoked-potentials",
+        "rat",
+        "neurophys"
       ],
       "links": {
-        "paper": "https://elifesciences.org/articles/51419",
-        "pdf": "static/pdf/neuralsignatures2020.pdf"
+        "paper": "https://doi.org/10.1016/j.neurobiolaging.2018.08.023"
       }
     },
-    
+
     {
       "year": 2018,
       "authors": "Parthasarathy, A. & Kujawa, S.",
       "title": "Synaptopathy in the Aging Cochlea: Characterizing Early-Neural Deficits in Auditory Temporal Envelope Processing",
       "venue": "Journal of Neuroscience, 2018",
       "tags": [
+        "synaptopathy",
         "aging",
-        "evoked-potentials"
+        "evoked-potentials",
+        "mouse",
+        "immunohistology"
       ],
       "links": {
         "paper": "https://www.jneurosci.org/content/38/32/7108.short",
@@ -289,8 +444,9 @@
       "title": "Hierarchical Winner-Take-All Particle Swarm Optimization Social Network for Neural Model Fitting",
       "venue": "Journal of Computational Neuroscience, 2017",
       "tags": [
-        "aging",
-        "evoked-potentials"
+        "rat",
+        "neurophys",
+        "machine"
       ],
       "links": {
         "pdf": "https://link.springer.com/content/pdf/10.1007/s10827-016-0628-2.pdf"
@@ -299,19 +455,20 @@
 
     {
       "year": 2017,
-      "authors": "Hermann, B., Parthasarathy, A., & Bartlett, E.",
+      "authors": "Herrmann, B., Parthasarathy, A., & Bartlett, E.",
       "title": "Ageing Affects Dual Encoding of Periodicity and Envelope Shape in Rat Inferior Colliculus Neurons",
       "venue": "European Journal of Neuroscience, 2017",
       "tags": [
         "aging",
-        "evoked-potentials"
+        "rat",
+        "neurophys"
       ],
       "links": {
         "paper": "https://onlinelibrary.wiley.com/doi/full/10.1111/ejn.13463",
         "pdf": "https://onlinelibrary.wiley.com/doi/epdf/10.1111/ejn.13463"
       }
     },
-    
+
     {
       "year": 2016,
       "authors": "Parthasarathy, A., Lai, J., & Bartlett, E.",
@@ -319,7 +476,9 @@
       "venue": "Journal of the Association for Research in Otolaryngology (JARO), 2016",
       "tags": [
         "aging",
-        "evoked-potentials"
+        "evoked-potentials",
+        "rat",
+        "machine"
       ],
       "links": {
         "pdf": "https://link.springer.com/content/pdf/10.1007/s10162-016-0554-z.pdf"
@@ -328,12 +487,12 @@
 
     {
       "year": 2015,
-      "authors": "Hermann, B., Parthasarathy, A., Han, E., Obleser, J., & Bartlett, E.",
+      "authors": "Herrmann, B., Parthasarathy, A., Han, E., Obleser, J., & Bartlett, E.",
       "title": "Sensitivity of Rat Inferior Colliculus Neurons to Frequency Distributions",
       "venue": "Journal of Neurophysiology, 2015",
       "tags": [
-        "aging",
-        "evoked-potentials"
+        "rat",
+        "neurophys"
       ],
       "links": {
         "paper": "https://journals.physiology.org/doi/full/10.1152/jn.00555.2015",
@@ -343,71 +502,77 @@
 
     {
       "year": 2014,
-      "authors": "Parthasarathy, A., Datta, J., Torres, J., Hopkins, C., & Bartlett E.",
+      "authors": "Parthasarathy, A., Datta, J., Torres, J., Hopkins, C., & Bartlett, E.",
       "title": "Age-Related Changes in the Relationship Between Auditory Brainstem Responses and Envelope-Following Responses",
       "venue": "Journal of the Association for Research in Otolaryngology (JARO), 2014",
       "tags": [
         "aging",
-        "evoked-potentials"
+        "evoked-potentials",
+        "rat"
       ],
       "links": {
         "pdf": "https://link.springer.com/content/pdf/10.1007/s10162-014-0460-1.pdf"
       }
     },
 
-        {
+    {
       "year": 2012,
-      "authors": "Rabang, C., Parthasarathy, A., Venkataraman, Y., Fisher, Z., Gardner, S., & Bartlett E.",
+      "authors": "Rabang, C., Parthasarathy, A., Venkataraman, Y., Fisher, Z., Gardner, S., & Bartlett, E.",
       "title": "A Computational Model of Inferior Colliculus Responses to Amplitude Modulated Sounds in Young and Aged Rats",
       "venue": "Frontiers in Neural Circuits, 2012",
       "tags": [
         "aging",
-        "evoked-potentials"
+        "rat",
+        "neurophys",
+        "machine"
       ],
       "links": {
-        "paper" : "https://www.frontiersin.org/journals/neural-circuits/articles/10.3389/fncir.2012.00077/full"
+        "paper": "https://www.frontiersin.org/journals/neural-circuits/articles/10.3389/fncir.2012.00077/full"
       }
     },
 
-        {
+    {
       "year": 2012,
-      "authors": "Parthasarathy, A. & Bartlett E.",
+      "authors": "Parthasarathy, A. & Bartlett, E.",
       "title": "Two-Channel Recording of Auditory-Evoked Potentials to Detect Age-Related Deficits in Temporal Processing",
       "venue": "Hearing Research, 2012",
       "tags": [
         "aging",
-        "evoked-potentials"
+        "evoked-potentials",
+        "rat"
       ],
       "links": {
-        "paper" : "https://www.sciencedirect.com/science/article/pii/S0378595512001001"
+        "paper": "https://www.sciencedirect.com/science/article/pii/S0378595512001001"
       }
     },
 
     {
       "year": 2011,
-      "authors": "Parthasarathy, A. & Bartlett E.",
+      "authors": "Parthasarathy, A. & Bartlett, E.",
       "title": "Age-Related Auditory Deficits in Temporal Processing in F-344 Rats",
-      "venue": "Neuroscience, 2012",
+      "venue": "Neuroscience, 2011",
       "tags": [
         "aging",
-        "evoked-potentials"
+        "evoked-potentials",
+        "rat"
       ],
       "links": {
-        "paper" : "http://sciencedirect.com/science/article/pii/S0306452211007263"
+        "paper": "http://sciencedirect.com/science/article/pii/S0306452211007263"
       }
     },
 
-        {
+    {
       "year": 2010,
-      "authors": "Parthasarathy, A., Cunningham, P., & Bartlett E.",
+      "authors": "Parthasarathy, A., Cunningham, P., & Bartlett, E.",
       "title": "Age-Related Differences in Auditory Processing as Assessed by Amplitude-Modulation Following Responses in Quiet and in Noise",
-      "venue": "Frontiers in Neural Circuits, 2010",
+      "venue": "Frontiers in Aging Neuroscience, 2010",
       "tags": [
         "aging",
-        "evoked-potentials"
+        "evoked-potentials",
+        "rat"
       ],
       "links": {
-        "paper" : "https://www.frontiersin.org/journals/aging-neuroscience/articles/10.3389/fnagi.2010.00152/full"
+        "paper": "https://www.frontiersin.org/journals/aging-neuroscience/articles/10.3389/fnagi.2010.00152/full"
       }
     }
   ]

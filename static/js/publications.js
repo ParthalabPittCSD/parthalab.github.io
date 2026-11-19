@@ -18,9 +18,10 @@
     { id: 'mouse',             label: 'Mouse' },
     { id: 'clinical',          label: 'Clinical' },
     { id: 'neurophys',         label: 'Neurophysiology' },
-    { id: 'immunohistiology',  label: 'Immunohistiology' },
+    { id: 'immunohistology',   label: 'Immunohistology' },
     { id: 'pupillometry',      label: 'Pupillometry' },
     { id: 'machine',           label: 'Machine Learning/Modeling' },
+    { id: 'rat',               label: 'Rat' },
     { id: 'preprint',          label: 'Preprint' }
   ];
   const TAG_LABEL = Object.fromEntries(TAGS.map(t => [t.id, t.label]));
