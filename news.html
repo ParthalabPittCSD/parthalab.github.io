@@ -173,7 +173,19 @@
           </div>
         </div>
 
-        <div class="news-entry">
+
+
+        <!-- ------------------------------------------------------------------
+             OLDER NEWS (hidden until the visitor clicks the button).
+             When the list above gets long, cut the oldest items and paste them inside the
+             <div id="olderNews"> below.
+             ------------------------------------------------------------------ -->
+        <button class="btn btn-bw-dark mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#olderNews" aria-expanded="false" aria-controls="olderNews">
+          Show earlier news
+        </button>
+        <div class="collapse mt-3" id="olderNews">
+          <!-- PASTE OLDER NEWS ITEMS HERE (same block as above) -->
+                  <div class="news-entry">
           <div class="row g-4 align-items-start">
             <div class="col-md-12">
               <h3><a href="news/newpreprints.html" class="entry-link">New Preprints alert!</a></h3>
@@ -199,19 +211,7 @@
             </div>
           </div>
         </div>
-
-
-        <!-- ------------------------------------------------------------------
-             OLDER NEWS (hidden until the visitor clicks the button).
-             When the list above gets long, cut the oldest items and paste them inside the
-             <div id="olderNews"> below.
-             ------------------------------------------------------------------ -->
-        <button class="btn btn-bw-dark mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#olderNews" aria-expanded="false" aria-controls="olderNews">
-          Show earlier news
-        </button>
-        <div class="collapse mt-3" id="olderNews">
-          <!-- PASTE OLDER NEWS ITEMS HERE (same block as above) -->
-        <div class="news-entry">
+          <div class="news-entry">
           <div class="row g-4 align-items-start">
             <div class="col-md-3">
               <a href="news/podcast.html">
