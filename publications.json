@@ -1,5 +1,50 @@
 {
   "publications": [
+    
+        {
+      "year": 2025,
+      "authors": "Sorensen, D., Sugai, J., Parthasarathy, A., Hancock, K., & Polley, D.",
+      "title": "The slowest timescales of neural synchronization reveal the strongest influence of auditory distraction",
+      "venue": "Frontiers in Human Neuroscience, 2025",
+      "tags": [
+        "aging",
+        "evoked-potentials"
+      ],
+      "links": {
+        "pdf": "static/pdf/fhn_2025.pdf",
+        "paper" : "https://doi.org/10.3389/fnhum.2025.1623431"
+      }
+    },
+
+    {
+      "year": 2025,
+      "authors": "Zink, M., Zhen, L., McHaney, J., Klara, J., Yurasits, K., Cancel, V., Flemm, O., Mitchell, C., Datta, J., Chandresekaran, B., & Parthasarathy, A.",
+      "title": "Increased Listening Effort and Cochlear Neural Degeneration Underlie Speech-in-Noise Deficits in Normal-Hearing Middle-Aged Adults",
+      "venue": "eLife, 2025",
+      "tags": [
+        "aging",
+        "evoked-potentials"
+      ],
+      "links": {
+        "paper" : "https://doi.org/10.7554/eLife.102823.3"
+      }
+    },
+
+    {
+      "year": 2025,
+      "authors": "Guo, Z., McHaney, J., Parthasarathy, A., McFarlane, K., & Chandrasekaran, B.",
+      "title": "Reduced Neural Distinctiveness of Speech Representations in the Middle-Aged Brain",
+      "venue": "Neurobiology of Language, 2025",
+      "tags": [
+        "aging",
+        "evoked-potentials"
+      ],
+      "links": {
+        "pdf": "https://watermark02.silverchair.com/nol_a_00169.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAAlcwggJTBgkqhkiG9w0BBwagggJEMIICQAIBADCCAjkGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMFv8JkNQD-qUgtVOcAgEQgIICClb6zOdZj7FZeArYypnw5jkiuUAUOuxaFgXA0kLLTtg-3J_L5XCiHlL9nSQWOJJn152zG1xFNHA9HHYu74-hblvQ286o794-v67Pb-d4AcYMhl-CVUpE4ZbVK1Kxp5AIJYFbOh61_seiB0IjMyBJLGV6s7H31BsRcWaZ4ZZPaS2eRRIXu4i379NNnnxoW-NEtAQ3GegDQf6uMyi2XUf7-9kpVRks5jTTgNbmndoqg1sYWqWdzxsb6gQlFKFLvmEzBndHCe5sYGy7SwighmD-prhSKl16SSzP7NLPu_aOXSrmu7Kl-KtZqh-uQm51bjD191vFr8uVe4gw3-BXk7QH4e_i0TWCnzeY-C2KVkEQchfT2-xPcHqQvpOWmEtblnzS0Odtafl09ltjIZhadJ9fvkDd9Lg_xoUPMU4_UnfWVOOIBN4SA8VMhI7ShpFbGZf-goFwt8ltFtG2gXlX8j1d-wzkjMe-ZrWiLTeloxPAGkO9vRvZUWAfUeDnGrYafj763BvpWp5OydiYN6fPpRSURaIPK6JreUSd5csfd0HesuviNCGpPKQjItdWSYWQ_JJaf-L0hvP2C8O_a8b9dnxzJkCiWpFEwMew3ORIq9a1srh7szyXYfV5n-zM0ODcRQ8Z2Qp6Lrl9tyFzObswQUHhd7Bqt1tJLqWqN7gOV_PCooWo5uyGOV6p07Z5nA",
+        "paper" : "https://direct.mit.edu/nol/article/doi/10.1162/nol_a_00169/128715"
+      }
+    },
+
     {
       "year": 2025,
       "authors": "Guo, Z., McHaney, J., Parthasarathy, A., McFarlane, K., & Chandrasekaran, B.",

@@ -11,7 +11,17 @@
     { id: 'synaptopathy',      label: 'Cochlear synaptopathy' },
     { id: 'aging',             label: 'Aging' },
     { id: 'speech-in-noise',   label: 'Speech in noise' },
-    { id: 'evoked-potentials', label: 'Evoked potentials (ABR / EFR)' }
+    { id: 'evoked-potentials', label: 'Evoked potentials (ABR / EFR)' },
+    { id: 'cross-species',     label: 'Cross-Species' },
+    { id: 'human',             label: 'Human' },
+    { id: 'gerbil',            label: 'Gerbil' },
+    { id: 'mouse',             label: 'Mouse' },
+    { id: 'clinical',          label: 'Clinical' },
+    { id: 'neurophys',         label: 'Neurophysiology' },
+    { id: 'immunohistiology',  label: 'Immunohistiology' },
+    { id: 'pupillometry',      label: 'Pupillometry' },
+    { id: 'machine',           label: 'Machine Learning/Modeling' },
+    { id: 'preprint',          label: 'Preprint' }
   ];
   const TAG_LABEL = Object.fromEntries(TAGS.map(t => [t.id, t.label]));
 
