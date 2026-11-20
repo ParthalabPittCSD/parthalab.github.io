@@ -1,4 +1,11 @@
-{
+  {
+  "metrics": {
+    "asOf": "May 15, 2026",
+    "citations": 3681,
+    "hIndex": 28,
+    "i10Index": 46,
+    "rcr": 2.63
+  },
   "publications": [
     {
       "year": 2026,
